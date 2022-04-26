@@ -1,0 +1,195 @@
+/**
+ * Inspired by <a href="https://github.com/jekyll/minima">Jekyll Minima</a>
+ */
+
+
+/* Reset Styles */
+html {
+    font-size: 16px;
+    color: #111111;
+    background-color: #fdfdfd;
+}
+
+main {
+    display: block;
+    margin: 1em auto 0;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+body, h1, h2, hr, dl, dd, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 400 1em/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+    font-kerning: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+/* Layout */
+@media screen and (min-width: 800px) {
+    main {
+        max-width: 800px;
+    }
+    nav {
+        width: 800px;
+    }
+    header p {
+        max-width: 800px;
+        font-size: 3em;
+    }
+    h1 {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    main {
+        padding: 0 2em;
+    }
+    header {
+        padding: 0 2em;
+    }
+    header p {
+        font-size: 2em;
+    }
+    nav {
+        width: 100%;
+    }
+    section header {
+        padding: 0;
+    }
+}
+
+header {
+    background: #f6f7fa;
+}
+
+section header {
+    background: none;
+}
+
+header p {
+    margin: 1em auto;
+    color: #64718e;
+}
+
+h1 {
+    text-transform: lowercase;
+    font-weight: 400;
+    background: linear-gradient(#4ca6ff,#1262b2);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section:nth-child(3) dt {
+    display: none;
+}
+
+a {
+    color: #2a7ae2;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 4px solid;
+    text-transform: lowercase;
+    text-align: center;
+    padding: 1%;
+    float: left;
+    width: 31%;
+}
+
+nav li:nth-child(1) {
+   border-bottom-color: #4ca6ff;
+}
+
+nav li:nth-child(2) {
+    border-bottom-color: #ffb333;
+}
+
+nav li:nth-child(3) {
+    border-bottom-color: #ff584c;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #1262b2;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #64718e;
+}
+
+section ul {
+    line-height: 2em;
+    margin-left: 1em;
+}
+
+main section dt {
+    display: none;
+}
+
+main section li {
+    list-style: "- ";
+    font-size: 1em;
+    line-height: 1.75em;
+    padding-left: 0.5em;
+}
+main ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+main li {
+    margin: 0 0 0.25em;
+}
+
+main dl {
+    border-bottom: 1px solid #64718e;
+    margin-bottom: 1.5em;
+}
+
+
+main section:nth-child(2) ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main section dl:last-child {
+    border-bottom: none;
+}
