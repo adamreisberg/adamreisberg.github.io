@@ -12,6 +12,10 @@ html {
 
 main {
     display: block;
+    margin: 1em auto 0;
+}
+
+nav {
     margin: 0 auto;
 }
 
@@ -40,10 +44,53 @@ hr {
     main {
         max-width: 800px;
     }
+    nav {
+        width: 800px;
+    }
+    header p {
+        max-width: 800px;
+        font-size: 3em;
+    }
+    h1 {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    main {
+        padding: 0 2em;
+    }
+    header {
+        padding: 0 2em;
+    }
+    header p {
+        font-size: 2em;
+    }
+    nav {
+        width: 100%;
+    }
+    section header {
+        padding: 0;
+    }
+}
+
+header {
+    background: #f6f7fa;
+}
+
+section header {
+    background: none;
+}
+
+header p {
+    margin: 1em auto;
+    color: #64718e;
 }
 
 h1 {
-    font-size: 6em;
     text-transform: lowercase;
     font-weight: 400;
     background: linear-gradient(#4ca6ff,#1262b2);
@@ -54,10 +101,6 @@ h1 {
     margin: 0 auto;
 }
 
-section:nth-child(1) p {
-    font-size: 3em;
-}
-
 section:nth-child(3) dt {
     display: none;
 }
@@ -65,14 +108,24 @@ section:nth-child(3) dt {
 a {
     color: #2a7ae2;
     text-decoration: none;
+    font-size: 1em;
 }
+
+nav ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 nav li {
     border-bottom: 4px solid;
     text-transform: lowercase;
-}
-
-nav {
-    width: 200px;
+    text-align: center;
+    padding: 1%;
+    float: left;
+    width: 31%;
 }
 
 nav li:nth-child(1) {
@@ -104,4 +157,39 @@ h3 {
 section ul {
     line-height: 2em;
     margin-left: 1em;
+}
+
+main section dt {
+    display: none;
+}
+
+main section li {
+    list-style: "- ";
+    font-size: 1em;
+    line-height: 1.75em;
+    padding-left: 0.5em;
+}
+main ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+main li {
+    margin: 0 0 0.25em;
+}
+
+main dl {
+    border-bottom: 1px solid #64718e;
+    margin-bottom: 1.5em;
+}
+
+
+main section:nth-child(2) ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main section dl:last-child {
+    border-bottom: none;
 }
